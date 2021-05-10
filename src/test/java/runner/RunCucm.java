@@ -1,6 +1,7 @@
 package runner;
 
 import java.io.File;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -16,8 +17,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(plugin = { "json:target/Runcuke/cucumber.json", "pretty", "html:target/Runcuke/cucumber.html",
-		"com.cucumber.listener.ExtentCucumberFormatter" }, features = "src/test/resources/features", glue = "steps")
+
+@CucumberOptions(plugin = { "json:target/cucumber.json", "pretty", "html:target/cucumber.html",
+"com.cucumber.listener.ExtentCucumberFormatter" }, features = "src/test/resources/features", glue = "steps")
+
+
+// @CucumberOptions(plugin = { "json:target/Runcuke/cucumber.json", "pretty", "html:target/Runcuke/cucumber.html",
+//		"com.cucumber.listener.ExtentCucumberFormatter" }, features = "src/test/resources/features", glue = "steps")
 
 public class RunCucm extends AbstractTestNGCucumberTests {
 
