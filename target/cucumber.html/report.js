@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4875002100,
+  "duration": 4594175000,
   "status": "passed"
 });
 formatter.scenario({
@@ -59,14 +59,14 @@ formatter.match({
   "location": "LoginTest.user_navigates_to_marin_https_staging_dev_socialimprints_com_admin_sign_in()"
 });
 formatter.result({
-  "duration": 3703251400,
+  "duration": 2084146200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_clicks_on_the_Sign_in_google()"
 });
 formatter.result({
-  "duration": 35410800,
+  "duration": 27182900,
   "status": "passed"
 });
 formatter.match({
@@ -79,7 +79,7 @@ formatter.match({
   "location": "LoginTest.user_entered_username(String)"
 });
 formatter.result({
-  "duration": 20265700,
+  "duration": 22308400,
   "status": "passed"
 });
 formatter.match({
@@ -92,18 +92,20 @@ formatter.match({
   "location": "LoginTest.user_entered_password(String)"
 });
 formatter.result({
-  "duration": 4243150100,
+  "duration": 3728963300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.user_logged_successfully()"
 });
 formatter.result({
-  "duration": 31282500,
-  "status": "passed"
+  "duration": 30893600,
+  "error_message": "java.lang.AssertionError: expected [Social Imprints] but found [Social Imprints test]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:575)\r\n\tat org.testng.Assert.assertEquals(Assert.java:585)\r\n\tat steps.LoginTest.user_logged_successfully(LoginTest.java:77)\r\n\tat ✽.Then user logged successfully(FeatureLogin.feature:10)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 856988500,
+  "duration": 13910153000,
   "status": "passed"
 });
 });
